@@ -1,11 +1,12 @@
 <!DOCTYPE html>
 <html>
 <head>
-
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
 <style>
 *{
 	margin: 0;
 	padding: 0;
+	box-sizing: border-box;
 }
 .h-1, .h-2, .h-3, .h-4, .h-5, .h-6{
 	text-transform: capitalize;
@@ -139,11 +140,13 @@
 .text-capitalize{
 	text-transform: capitalize;
 }
-
+.text-gray{
+ 	color: gray;
+}
 .text-white{
 	color: fff;
 }
-.text-green:{
+.text-green{
 	color: #008166;
 }
 .text-red{
@@ -152,7 +155,9 @@
 .text-black{
 	color: #000;
 }
-
+.text-blue{
+	color: blue;
+}
 .btn {
 	outline: none;
 	border:none;
@@ -279,27 +284,29 @@
 }
 
 .card-container{
-	width: 1000px;
 	display: flex;
-	align-item: center;
-	justify-content: center;
+	justify-content: space-evenly;
 }
 
 .card{ 
 	position: relative;
 	text-align: center;
-	display: inline-block;
-	max-width: 300px;
+	width: 300px;
 	height: 250px;
-	margin: auto;
 	border-radius: 8px;
 	background-color: #ffe;	
 	box-shadow: 2px 3px 2px gray;
 	overflow: hidden;
+	display: flex;
+	padding:10px;
+	margin-bottom:20px;
+	flex-direction: column;
+	align-items: center;
 }
 .card-img-top{
-	width: 100%;
-	height: 40%;
+	width: 100px;
+	height: 100px;
+	border-radius:50%;
 	background-color: #153142;	
 }
 .card-body{
@@ -332,6 +339,16 @@
 .card-btn:active{
 	opacity: 1;
 }
+@media screen and (max-width:500px){
+	.card-container{
+		display:flex;
+		flex-direction:column;
+	}.card{
+		width:100%;
+		font-size:1rem;
+	}
+}
+
 </style>
 <title>CSS FRAMEWORKS </title>
 </head>
@@ -349,9 +366,9 @@
 <p class="w-100 p-1 bg-red">this bg is  red</p>
 <p class="w-100 p-1 bg-water">this bg is white </p>
 <div class="bg-gray p-1  w-100">
-<p class="text-center"> center</p>
-<p class="text-left"> left </p>
-<p class="text-right">right</p>
+<p class="text-center"> text-center</p>
+<p class="text-left"> text-left </p>
+<p class="text-right">text-right</p>
 </div>
 <h1 class="h2 text-center text-capitalize"> button hover inner shadow  </h1>
 <button class="btn btn-dark-inline"> dark </button>
@@ -371,8 +388,8 @@
 		</div>	
 		<div class="card-body">
 			<h5 class="card-title text-white"> Card Title </h5>
-			<p class="card-text"> Some quick example text to build on the card title and make up the bulk of the card's content.....</p>
-			<a href="#" class="card-btn"> button </a>
+			<p class="card-text text-gray"> Some quick example text to build on the card title and make up the bulk of the card's content.....</p>
+			<a href="#" class="card-btn">Contact</a>
 		</div>	
 	</div>
 
@@ -382,8 +399,8 @@
 		</div>	 
 		<div class="card-body">
 			<h5 class="card-title text-red"> Card Title </h5>
-			<p class="card-text"> Card text goes here Some quick example text to build on the card title and make up the bulk of the card's content.... ....</p>
-			<a href="#" class="card-btn"> button </a>
+			<p class="card-text text-gray"> Card text goes here Some quick example text to build on the card title and make up the bulk of the card's content.... ....</p>
+			<a href="#" class="card-btn"> Contact </a>
 		</div>	
 	</div>
 	<div class="card"> 
@@ -391,9 +408,9 @@
 			<img src="">
 		</div>
 		<div class="card-body">
-			<h5 class="card-title text-green"> Card Title </h5>
-			<p class="card-text"> Card text goes here Some quick example text to build on the card title and make up the bulk of the card's content.... ....</p>
-			<a href="#" class="card-btn"> button </a>
+			<h5 class="card-title"> Card Title </h5>
+			<p class="card-text text-gray"> Card text goes here Some quick example text to build on the card title and make up the bulk of the card's content.... ....</p>
+			<a href="#" class="card-btn"> Contact </a>
 		</div>	
 	</div>
 </div>
