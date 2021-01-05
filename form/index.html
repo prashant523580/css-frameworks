@@ -15,11 +15,13 @@ label{
 	color: white;
 	font-size: 30px;
 	text-align: center;
+	text-shadow: 0 0 2px black;
 
 }
 .form-input{
+	text-transform: capitalize;
 	width: 100%;
-	color: red;
+	color: #89c;
 	padding: 10px 0; 
 	background-color: black;
 	outline: 0;
@@ -27,7 +29,16 @@ label{
 	font-size: 15px;
 	border-radius: 5px;
 }
-textarea{
+
+.text-input{
+	width: 100%;
+	color: #89c;
+	padding: 10px 0; 
+	background-color: black;
+	outline: 0;
+	border: 0;
+	font-size: 15px;
+	border-radius: 5px;
 	height: 100px;
 }
 .btn{
@@ -36,7 +47,15 @@ textarea{
 	border-radius: 4px;
 	padding: 12px 14px;
 	background-color: black;
-	color: red;
+	color: white;
+	cursor: pointer;
+}
+.btn:hover{
+	background: white;
+	color: black;
+}
+.btn:active{
+	color: #89c;
 }
 </style>
 </head>
@@ -48,7 +67,7 @@ textarea{
 	<label for="email">Email</label>
 	<input type="email" class="form-input" placeholder="example@gmail.com" name="email">
 	<label for="text-area">Comment...<label>
-	<textarea class="form-input" name="text-area"> </textarea>
+	<textarea class="text-input" name="text-area"> </textarea>
 	<input type="submit" class="btn" value="submit" name="submit">
 </form>
 </div>
