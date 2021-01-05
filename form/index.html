@@ -3,7 +3,7 @@
 <head>
 <meta name="viewport" content="width=device-width, initial-scale=1.0"> 
 <style>
-.container{
+.form-container{
 	background-color: #89c;
 	padding: 10px 10px;
 }
@@ -17,9 +17,7 @@ label{
 	text-align: center;
 
 }
-input[type=text],
-input[type=email],
-textarea{
+.form-input{
 	width: 100%;
 	color: red;
 	padding: 10px 0; 
@@ -28,11 +26,11 @@ textarea{
 	border: 0;
 	font-size: 15px;
 	border-radius: 5px;
-	}
+}
 textarea{
 	height: 100px;
 }
-input[type=submit]{
+.btn{
 	outline: 0;
 	border: 0;
 	border-radius: 4px;
@@ -43,15 +41,15 @@ input[type=submit]{
 </style>
 </head>
 <body>
-<div class="container">
+<div class="form-container">
 <form>
 	<label for="fullname">Full name</label>
-	<input type="text" placeholder="Enter your full name" name="fname">
+	<input type="text" class="form-input" placeholder="Enter your full name" name="fname">
 	<label for="email">Email</label>
-	<input type="email" placeholder="example@gmail.com" name="email">
+	<input type="email" class="form-input" placeholder="example@gmail.com" name="email">
 	<label for="text-area">Comment...<label>
-	<textarea name="text-area"> </textarea>
-	<input type="submit" value="submit" name="submit">
+	<textarea class="form-input" name="text-area"> </textarea>
+	<input type="submit" class="btn" value="submit" name="submit">
 </form>
 </div>
 </body>
