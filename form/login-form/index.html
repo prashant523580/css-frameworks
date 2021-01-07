@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta name="viewport" content="witdh=width-device, initial-scale=1.0">
+<style>
+.form-container{
+	padding:10px 10px;
+	background: linear-gradient(#222,#fff,#444);
+}
+h1{	text-align:canter;
+	color: white;
+	text-shadow: 0 0 2px black;
+}
+form{
+	display:flex;
+	flex-direction: column;
+}
+label{
+	color: white;
+	text-shadow: 0 0 2px black;
+	font-size: 1.4rem;
+	text-transform: capitalize;;
+}
+.form-input{
+	width:100%;
+	padding:10px 0 ;
+	text-transform: capitalize;
+
+}
+.btn{
+	width: 30%;
+	padding:12px 14px;
+	outline:0;
+	border: none;
+	background: #bbb;
+	color: #fff;
+	border-radius:4px;
+	cursor: pointer;
+}
+.btn:hover{
+	background: #ccc;
+}
+</style>
+</head>
+<body>
+<div class="form-container">
+	<h1> Login Form</h1>
+	<form>
+		<label for="username"> Username  </label>
+		<input type="text" class="form-input" placeholder="Username" name="uaername">
+		<label> Password </label>
+		<input type="password" class="form-input" placeholder="password" name="psword">
+		<label for="check">
+		<input type="checkbox">
+		remember password </label>
+		<input type="submit" class="btn" value="Login"> 
+	</form>
+</div>
+</body>
+</html>
